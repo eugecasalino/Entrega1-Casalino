@@ -37,13 +37,13 @@ function reiniciarContador() {
     }
 }
 
-// Mostrar en la consola y un cuadro de diálogo
+// Mostrar en la consola
 function actualizarPantalla() {
     console.log('Contador: ' + contador);
     alert('Contador: ' + contador);
 }
 
-// Ciclo WHILE y SWITCH
+// Ciclos WHILE y SWITCH
 while (contador < ContadorMaximo) {
     const opcion = prompt('Opciones:\n1. Aumentar contador\n2. Disminuir contador\n3. Reiniciar contador\n4. Salir');
 
