@@ -1,7 +1,3 @@
-
-
-
-
 // Declaración de variable
 let contador = 0;
 
