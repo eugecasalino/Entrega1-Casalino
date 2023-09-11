@@ -3,12 +3,14 @@ let contador = 0;
 
 // Declaración de constante
 const ContadorMaximo = 10;
+const historial = [];
 
 // Aumentar el contador
 function aumentarContador() {
     if (contador < ContadorMaximo) {
         contador++;
         actualizarPantalla();
+        historial.push('Aumentar');
     } else {
         alert('¡El contador alcanzó su valor máximo!');
     }
@@ -19,6 +21,7 @@ function disminuirContador() {
     if (contador > 0) {
         contador--;
         actualizarPantalla();
+        historial.push('Disminuir');
     } else {
         alert('¡El contador ya está en cero!');
     }
@@ -30,6 +33,7 @@ function reiniciarContador() {
     if (confirmacion) {
         contador = 0;
         actualizarPantalla();
+        historial.push('Reiniciar');
     }
 }
 
@@ -62,3 +66,5 @@ while (contador < ContadorMaximo) {
             break;
     }
 }
+
+console.log('Historial:', historial.join(', '));
